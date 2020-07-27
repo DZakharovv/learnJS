@@ -13,26 +13,26 @@ const expensesAdd = document.getElementsByTagName('button')[1];
 console.log("expensesAdd: ", expensesAdd);
 
 // Чекбокс по id через querySelector
-const depositCheck = document.querySelector('#deposit-check'); 
+const depositCheck = document.querySelector('#deposit-check');
 console.log("checkBox: ", depositCheck);
 
 // Поля для ввода возможных доходов (additional_income-item) при помощи querySelectorAll
-const addIncomeItem = document.querySelectorAll('.additional_income-item');
+const addIncomeItem = document.querySelectorAll('.additional_income-item')[0];
 console.log("addIncomeItem: ", addIncomeItem);
 
 // Правая часть программы (через класс), -value.
 
-const budgetDay = document.querySelector('.budget_day-value');
+const budgetDay = document.getElementsByClassName('budget_day-value')[0];
 console.log("budgetDay: ", budgetDay);
-const expensesMonth = document.querySelector('.expenses_month-value');
+const expensesMonth = document.getElementsByClassName('expenses_month-value')[0];
 console.log("expensesMonth: ", expensesMonth);
-const addIncome = document.querySelector('.additional_income-value');
+const addIncome = document.getElementsByClassName('additional_income-value')[0];
 console.log("addIncome: ", addIncome);
-const addExpenses = document.querySelector('.additional_expenses-value');
+const addExpenses = document.getElementsByClassName('additional_expenses-value')[0];
 console.log("addExpenses: ", addExpenses);
-const incomePeriod = document.querySelector('.income_period-value');
+const incomePeriod = document.getElementsByClassName('income_period-value')[0];
 console.log("incomePeriod: ", incomePeriod);
-const targetMonth = document.querySelector('.target_month-value');
+const targetMonth = document.getElementsByClassName('target_month-value')[0];
 console.log("targetMonth: ", targetMonth);
 
 // поля ввода (Input) с левой стороны, range
