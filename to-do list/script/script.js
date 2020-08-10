@@ -7,15 +7,13 @@ const todoControl = document.querySelector('.todo-control'),
     // todoContainer = document.querySelector('.todo-container'),
     todoCompleted = document.querySelector('.todo-completed');
 
-    let todoData = localStorage.getItem('todoBase') ? JSON.parse(localStorage.getItem('todoBase')) : {
-        todoList: [],
-        todoCompleted: []
-    };
+const todoData = localStorage.getItem('todoData') ? 
+JSON.parse(localStorage.getItem('todoData')) : [];
+
 const addToStorage = function() {
-    localStorage.setItem('todoBase', JSON.stringify(todoData));
+    localStorage.setItem('todoData', JSON.stringify(todoData));
 };
     
-// let todoData = []
 
 
 const render = function () {
